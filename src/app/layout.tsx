@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body>
-        <header className="w-full h-18 p-2 flex items-center justify-center">
+        <header className="w-full h-18 p-2 flex items-center justify-center bg-gray-900">
           <Link href="/" className="text-3xl duration-300" id="infLoja">Loja Infinity</Link>
         </header>
         {children}

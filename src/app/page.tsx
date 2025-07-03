@@ -13,26 +13,31 @@ export default async function Home() {
   console.log(products)
 
   return (
-    <div className="items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="items-center justify-items-center min-h-screen p-8 pb-20 gap-16  font-[family-name:var(--font-geist-sans)] bg-gray-900">
       <h1 className="text-[50px]">Produtos</h1>
 
-    <div className="grid grid-cols-3 grid-flow-row gap-5">
-      {
-        products.map((product) => (
-          <div key={product.id} className="flex items-center justify-center flex-col border-4 border-black rounded-2xl bg-gray-800 text-gray-600 p-4 text-center">
-            <img src={product.image} alt={product.title} className="h-36"/>
-            <h3>{product.title}</h3>
-            <p>
-              {product.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
-            </p>
+      <div className="grid grid-cols-1 grid-flow-row gap-5 md:grid-cols-3">
+        {
+          products.map((product) => (
+            <div key={product.id} className="flex items-center justify-center flex-col rounded-2xl bg-white text-gray-700 p-4 text-center hover-translateY duration-300">
+              <img src={product.image} alt={product.title} className="h-36" />
 
-            <Link href={`/products/${product.id}`} className="text-white">
-              Ver detalhes</Link>
-          </div>
-        ))}
+              
+              <div className="mt-auto">
+                <h3 className="text-xs">{product.title}</h3>
+                <p>
+                  {product.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
+                </p>
+
+                <Link href={`/products/${product.id}`} className="text-gray-700 hover-color-black duration-300">
+                  Ver detalhes</Link>
+              </div>
+
+            </div>
+          ))}
 
 
+      </div>
     </div>
-  </div>
   );
 }

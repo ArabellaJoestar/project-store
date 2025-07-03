@@ -28,3 +28,11 @@ body {
 #infLoja:hover{
   letter-spacing: 2px;
 }
+
+.hover-translateY:hover{
+  transform: translateY(-5px)
+}
+
+.hover-color-black:hover{
+  color: black;
+}
