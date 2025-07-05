@@ -48,7 +48,7 @@ export default function Home() {
         </select>
       </div>
 
-      <h1 className="text-[50px]">Produtos</h1>
+      <h1 className="text-[50px]">Products</h1>
 
       <div className="grid grid-cols-1 grid-flow-row gap-5 md:grid-cols-3">
         {filteredProducts.map((product) => (
@@ -70,7 +70,7 @@ export default function Home() {
               href={`/products/${product.id}`}
               className="bg-amber-400 mt-5 p-2 w-full text-xl rounded-2xl hover-spacing-shadow-btn duration-300"
             >
-              Ver detalhes
+              See Details
             </Link>
           </div>
         ))}

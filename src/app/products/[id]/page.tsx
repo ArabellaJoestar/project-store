@@ -50,7 +50,7 @@ export default async function ProductDetailPage({ params }: ProductsDetailsPageP
                         <p className="font-bold text-2xl md:text-3xl">
                             {product.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
                         </p>
-                        <button className="bg-amber-400 mt-2 p-3 md:p-3 w-full text-lg md:text-3xl rounded-2xl hover-spacing-color-btn duration-300">Comprar produto</button>
+                        <button className="bg-amber-400 mt-2 p-3 md:p-3 w-full text-lg md:text-3xl rounded-2xl hover-spacing-color-btn duration-300">Buy</button>
                     </div>
 
 
