@@ -28,11 +28,9 @@ export default async function Home() {
                 <p>
                   {product.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
                 </p>
-
-                <Link href={`/products/${product.id}`} className="text-gray-700 hover-color-black duration-300">
-                  Ver detalhes</Link>
               </div>
-
+                              <Link href={`/products/${product.id}`} className="bg-amber-400 mt-5 p-2 w-full text-xl rounded-2xl hover-spacing-shadow-btn duration-300">
+                  Ver detalhes</Link>
             </div>
           ))}
 
