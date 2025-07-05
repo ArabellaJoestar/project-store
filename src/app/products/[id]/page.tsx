@@ -1,7 +1,4 @@
 import { Product } from "@/types";
-import Link from "next/link";
-import homeIcon from '../../../../public/casa.png'
-import Image from 'next/image';
 
 interface ProductsDetailsPageProps {
     params: { id: string }
